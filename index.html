@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Новости</title>
+</head>
+<body class="container" style="margin-top: 10px;">
+    <a href="news.php" class="btn btn-info">Посмотреть доступные новости</a>
+    <form action="index.php" method="POST" class="form-group">
+        <label for="url">Выберите название ресурса</label>
+        <select name="resource[]" class="col-md-2 form-control" size="3">
+            <option name="resource[]" value="https://www.pravda.com.ua/rss/view_mainnews/">Правда</option>
+            <option name="resource[]" value="https://www.liga.net/tech/top/rss.xml">Лига нет</option>
+            <option name="resource[]" value="https://www.rbc.ua/static/rss/ukrnet.strong.rus.rss.xml">РБК Украина</option>
+            <option name="resource[]" value="https://fakty.ua/rss_feed/science">Факты</option>
+            <option name="resource[]" value="https://matemusic.ru/rss.php">Музыка</option>
+            <option name="resource[]" value="https://lifehacker.ru/feed/">lifehacker</option>
+            <option name="resource[]" value="https://www.it-world.ru/cionews/business/?rss=Y">IT+Business</option>
+            <option name="resource[]" value="https://admin10.rabota.ua/Export/Vacancy/feed.ashx?parentId=1">IT work</option>
+            <option name="resource[]" value="https://habr.com/ru/rss/all/all/?fl=ru">Habrahabr</option>
+            <option name="resource[]" value="https://admin10.rabota.ua/Export/Vacancy/feed.ashx?regionId=5">Работа у Виннице</option>
+            <option name="resource[]" value="https://admin10.rabota.ua/Export/Vacancy/feed.ashx?parentId=30">Работа для студентов</option>
+            <option name="resource[]" value="https://dou.ua/feed/">Dou</option> 
+
+        </select>
+        <br/>
+        <input type="submit" value="Send" class="btn btn-info">
+    </form>
+</body>
+</html>
